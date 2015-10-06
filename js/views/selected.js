@@ -13,17 +13,19 @@ app.selectedView = Backbone.View.extend ({
 		'click .destroy': 'removeItem'
 	},
 
+	// Updates the view when a model is changed or destroyed.
 	initialize: function () {
 		this.listenTo(this.model, 'change', this.render);
 		this.listenTo(this.model, 'destroy', this.remove)
 	},
 
+	// Renders the view.
 	render: function () {
 		this.$el.html(this.template(this.model.attributes));
 		return this;
 	},
 
-
+	// Destroys the model when the remove button is clicked.
 	removeItem: function(model) {
 		this.model.destroy();
 	}

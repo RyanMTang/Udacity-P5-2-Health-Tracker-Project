@@ -1,5 +1,6 @@
 var app = app || {};
 
+// Declares a variable for the selected food list collection.
 var selectedList = Backbone.Collection.extend ({
 	model: app.foodModel,
 
