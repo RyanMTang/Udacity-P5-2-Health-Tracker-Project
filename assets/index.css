@@ -1,3 +1,6 @@
+/*************************************************
+	GENERAL STYLES
+*************************************************/
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -9,6 +12,7 @@ h1 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.5em;
+	padding: 20px;
 }
 
 table {
@@ -28,10 +32,6 @@ td {
 	padding: 20px 20px;
 }
 
-input {
-	display: inline-block;
-}
-
 button, #searchButton, #clearResults, #clearSelected {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
@@ -44,13 +44,13 @@ button, #searchButton, #clearResults, #clearSelected {
   padding: 8px 10px 8px 10px;
   border: solid #1f628d 2px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #clearSelected {
 	display: block;
 	margin: 30px auto;
 }
-
 
 #searchSection {
 	text-align: center;
@@ -64,19 +64,20 @@ button, #searchButton, #clearResults, #clearSelected {
 }
 
 #resultsSection {
-	width: 47.5%;
-	float: left;
-	height: auto;
-	margin-right: 2.5%;
+	width: 100%;
 }
 
 #selectedSection {
-	width: 47.5%;
-	float: right;
+	width: 100%;
+}
+
+#searchBar, #searchButton, #clearResults {
+	margin: 15px auto;
 }
 
 #resultsHeader, #selectedHeader {
 	width:100%;
+	margin-top: 10px;
 }
 
 #itemCounter, #calorieCounter {
@@ -85,3 +86,66 @@ button, #searchButton, #clearResults, #clearSelected {
 	text-align: center;
 	font-size: 1.5em;
 }
+
+#counter {
+	margin-bottom: 20px;
+}
+
+/*************************************************
+	MOBILE VIEW
+*************************************************/
+
+table {
+	width: 100%;
+}
+
+input {
+	display: block;
+}
+
+#searchButton, #clearResults{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#searchResults, #selectedResults {
+		font-size: 0.6em;
+	}
+
+/*************************************************
+	TABLET VIEW
+*************************************************/
+
+@media screen and (min-width: 768px) {
+	
+	input {
+		display: inline-block;
+	}
+	
+	#resultsSection {
+		width: 47.5%;
+		float: left;
+		height: auto;
+		margin-right: 2.5%;
+	}
+
+	#selectedSection {
+		width: 47.5%;
+		float: right;
+	}
+}
+
+/*************************************************
+	DESKTOP VIEW
+*************************************************/
+
+@media screen and (min-width: 1200px) {
+	#searchResults, #selectedResults {
+		font-size: 1em;
+	}
+}
+
+
+
+
+
