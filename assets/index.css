@@ -1,0 +1,87 @@
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	font-family: Lato;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+table {
+	width: 100%;
+}
+
+tr:nth-child(odd) {
+	background-color: #B7CEDD;
+}
+
+
+tr:nth-child(even) {
+	background-color: #F1F3F3;
+}
+
+td {
+	padding: 20px 20px;
+}
+
+input {
+	display: inline-block;
+}
+
+button, #searchButton, #clearResults, #clearSelected {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  background: #3498db;
+  padding: 8px 10px 8px 10px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+#clearSelected {
+	display: block;
+	margin: 30px auto;
+}
+
+
+#searchSection {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#searchBar {
+	height: 30px;
+	width: 300px;
+	padding-left: 10px;
+}
+
+#resultsSection {
+	width: 47.5%;
+	float: left;
+	height: auto;
+	margin-right: 2.5%;
+}
+
+#selectedSection {
+	width: 47.5%;
+	float: right;
+}
+
+#resultsHeader, #selectedHeader {
+	width:100%;
+}
+
+#itemCounter, #calorieCounter {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.5em;
+}
