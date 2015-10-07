@@ -119,5 +119,3 @@ app.AppView = Backbone.View.extend ({
     		this.$('#searchButton').click();
     }
 });
-
-new app.AppView;
